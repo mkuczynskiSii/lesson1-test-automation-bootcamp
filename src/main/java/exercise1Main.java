@@ -10,7 +10,7 @@ public class exercise1Main {
         int maximumGuessesAmount = 5;
 
         for (int i = 0; i < maximumGuessesAmount; i++) {
-            System.out.println("Please try to guess number in 0-99 range");
+            System.out.println("Try to guess number in 0-99 range");
             try {
                 guessedNumber = new Scanner(System.in).nextInt();
 
