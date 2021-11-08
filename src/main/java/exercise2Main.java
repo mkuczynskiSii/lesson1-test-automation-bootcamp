@@ -20,7 +20,7 @@ public class exercise2Main {
 
         } catch (InputMismatchException e) {
             System.out.println("You are allowed to enter integers only!");
-            System.out.println("Please restart program");
+            System.out.println("Please restart the program");
         }
     }
 

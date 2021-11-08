@@ -30,6 +30,7 @@ public class exercise1Main {
                     break;
                 }
 
+                System.out.println("You have " + (maximumGuessesAmount - i -1) + " tries");
                 System.out.println("Please try again");
 
             } catch (InputMismatchException e) {
