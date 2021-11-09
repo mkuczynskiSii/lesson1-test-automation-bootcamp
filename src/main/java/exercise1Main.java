@@ -1,3 +1,5 @@
+import enums.Attempt;
+
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
@@ -16,7 +18,7 @@ public class exercise1Main {
                 guessedNumber = new Scanner(System.in).nextInt();
 
                 if (numberToGuess == guessedNumber) {
-                    System.out.println("You guessed it!");
+                    System.out.println("You guessed it in " + getAttemptOfGuess(i) + " attempt!");
                     break;
                 }
 
@@ -40,5 +42,29 @@ public class exercise1Main {
                 }
             }
         }
+    }
+
+    private static String getAttemptOfGuess(int i){
+        String attemptOfGuess;
+        switch(i+1){
+            case 1:
+                attemptOfGuess = Attempt.FIRST.toString();
+                break;
+            case 2:
+                attemptOfGuess = Attempt.SECOND.toString();
+                break;
+            case 3:
+                attemptOfGuess = Attempt.THIRD.toString();
+                break;
+            case 4:
+                attemptOfGuess = Attempt.FOURTH.toString();
+                break;
+            case 5:
+                attemptOfGuess = Attempt.FIFTH.toString();
+                break;
+            default:
+                attemptOfGuess = "ERROR";
+        }
+        return  attemptOfGuess;
     }
 }
