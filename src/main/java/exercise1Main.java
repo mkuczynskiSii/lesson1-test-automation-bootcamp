@@ -6,11 +6,12 @@ public class exercise1Main {
 
     public static void main(String[] args) {
         int numberToGuess = new Random().nextInt(100);
+        System.out.println("I just randomized an integer");
         int guessedNumber;
         int maximumGuessesAmount = 5;
 
         for (int i = 0; i < maximumGuessesAmount; i++) {
-            System.out.println("Try to guess number in 0-99 range");
+            System.out.println("Try to guess number in 0-99 range. You have " + (maximumGuessesAmount - i) + " tries left");
             try {
                 guessedNumber = new Scanner(System.in).nextInt();
 
@@ -29,8 +30,6 @@ public class exercise1Main {
                     System.out.println("Sorry you didn't guess the number, the answer was: " + numberToGuess);
                     break;
                 }
-
-                System.out.println("You have " + (maximumGuessesAmount - i -1) + " tries");
                 System.out.println("Please try again");
 
             } catch (InputMismatchException e) {
