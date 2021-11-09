@@ -46,20 +46,20 @@ public class exercise1Main {
 
     private static String getAttemptOfGuess(int i) {
         String attemptOfGuess;
-        switch (i + 1) {
-            case 1:
+        switch (i) {
+            case 0:
                 attemptOfGuess = Ordinal.FIRST.toString();
                 break;
-            case 2:
+            case 1:
                 attemptOfGuess = Ordinal.SECOND.toString();
                 break;
-            case 3:
+            case 2:
                 attemptOfGuess = Ordinal.THIRD.toString();
                 break;
-            case 4:
+            case 3:
                 attemptOfGuess = Ordinal.FOURTH.toString();
                 break;
-            case 5:
+            case 4:
                 attemptOfGuess = Ordinal.FIFTH.toString();
                 break;
             default:
