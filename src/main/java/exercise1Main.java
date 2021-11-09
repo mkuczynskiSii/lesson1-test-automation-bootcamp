@@ -44,9 +44,9 @@ public class exercise1Main {
         }
     }
 
-    private static String getAttemptOfGuess(int i){
+    private static String getAttemptOfGuess(int i) {
         String attemptOfGuess;
-        switch(i+1){
+        switch (i + 1) {
             case 1:
                 attemptOfGuess = Attempt.FIRST.toString();
                 break;
@@ -65,6 +65,6 @@ public class exercise1Main {
             default:
                 attemptOfGuess = "ERROR";
         }
-        return  attemptOfGuess;
+        return attemptOfGuess;
     }
 }
