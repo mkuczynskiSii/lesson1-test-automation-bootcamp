@@ -1,4 +1,4 @@
-import enums.Attempt;
+import enums.Ordinal;
 
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -48,19 +48,19 @@ public class exercise1Main {
         String attemptOfGuess;
         switch (i + 1) {
             case 1:
-                attemptOfGuess = Attempt.FIRST.toString();
+                attemptOfGuess = Ordinal.FIRST.toString();
                 break;
             case 2:
-                attemptOfGuess = Attempt.SECOND.toString();
+                attemptOfGuess = Ordinal.SECOND.toString();
                 break;
             case 3:
-                attemptOfGuess = Attempt.THIRD.toString();
+                attemptOfGuess = Ordinal.THIRD.toString();
                 break;
             case 4:
-                attemptOfGuess = Attempt.FOURTH.toString();
+                attemptOfGuess = Ordinal.FOURTH.toString();
                 break;
             case 5:
-                attemptOfGuess = Attempt.FIFTH.toString();
+                attemptOfGuess = Ordinal.FIFTH.toString();
                 break;
             default:
                 attemptOfGuess = "ERROR";

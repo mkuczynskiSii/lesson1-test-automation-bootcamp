@@ -1,6 +1,6 @@
 package enums;
 
-public enum Attempt {
+public enum Ordinal {
     FIRST,
     SECOND,
     THIRD,
