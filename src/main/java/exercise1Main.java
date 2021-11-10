@@ -45,26 +45,19 @@ public class exercise1Main {
     }
 
     private static String getAttemptOfGuess(int i) {
-        String attemptOfGuess;
         switch (i) {
             case 0:
-                attemptOfGuess = Ordinal.FIRST.toString();
-                break;
+                return Ordinal.FIRST.toString();
             case 1:
-                attemptOfGuess = Ordinal.SECOND.toString();
-                break;
+                return Ordinal.SECOND.toString();
             case 2:
-                attemptOfGuess = Ordinal.THIRD.toString();
-                break;
+                return Ordinal.THIRD.toString();
             case 3:
-                attemptOfGuess = Ordinal.FOURTH.toString();
-                break;
+                return Ordinal.FOURTH.toString();
             case 4:
-                attemptOfGuess = Ordinal.FIFTH.toString();
-                break;
+                return Ordinal.FIFTH.toString();
             default:
-                attemptOfGuess = "ERROR";
+                return  "ERROR";
         }
-        return attemptOfGuess;
     }
 }
